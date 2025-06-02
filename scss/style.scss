@@ -1,300 +1,283 @@
+// ========== VARIABLES ==========
+$color-bg: #000;
+$color-text: #fff;
+$color-secundario: #ccc;
+$color-acento: #00bfff;
+$color-borde: #555;
+$color-degradado-inicio: #cfcfcf;
+$color-degradado-medio: #2c2c2c;
+$color-degradado-fin: #000;
 
-// VARIABLES
-$font-family: 'Georgia', serif;
-$color-fondo: #3b2b20;
-$color-principal: #2d1a0f;
-$color-texto: #f4e9d4;
-$color-acento: #a67c52;
-$color-hover: #ffcc66;
-$color-secundario: #ffdd99;
-$breakpoint-tablet: 768px;
+$fuente-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-// MIXINS
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+// ========== RESET ==========
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-@mixin responsive-img($width: 100%) {
-    width: $width;
-    height: auto;
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: $color-bg;
+  color: $color-text;
+  font-family: $fuente-base;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-acento;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// ========== HEADER & FOOTER ==========
+header, footer {
+  background-color: #1c1c1c;
+}
+
+.degradado {
+  background: linear-gradient(to right, $color-degradado-inicio, $color-degradado-medio, $color-degradado-fin);
+}
+
+.navbar-brand img {
+  height: 70px;
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  color: $color-text !important;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-acento !important;
+  }
+}
+
+footer {
+  p {
+    margin: 0.3rem 0;
+    color: $color-secundario;
+  }
+
+  .footer-icon {
+    width: 32px;
+    height: 32px;
+    margin: 0 10px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+
+    &:hover {
+      filter: none;
+    }
+  }
+}
+
+// ========== GENERAL LAYOUT ==========
+.linea-divisoria {
+  border: none;
+  height: 1px;
+  background-color: #444;
+  margin: 0;
+}
+
+p {
+  color: $color-secundario;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: $color-text;
+  font-weight: 400;
+}
+
+main h1,
+section h1,
+.container h1,
+.text-center h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: $color-text;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+main .ajustar-contacto {
+  margin-top: 4rem;
+}
+
+main {
+  flex: 1;
+  padding-top: 1rem;
+}
+
+// ========== INDEX ==========
+.video-section {
+  padding-bottom: 5rem;
+}
+
+.video-image-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.video-wrapper,
+.image-wrapper {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.video-wrapper iframe,
+.image-wrapper img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid $color-borde;
+  display: block;
+}
+
+.presentacion-img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid $color-borde;
+  margin-top: 2rem;
+}
+
+// ========== HISTORIA ==========
+.img-ajustada-al-texto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid $color-borde;
+}
+
+// ========== OFERTAS ==========
+.oferta-img {
+  width: 100%;
+  height: auto;
+  max-height: 260px;
+  object-fit: contain;
+  background-color: #1a1a1a;
+  padding: 8px;
+  border-bottom: 1px solid $color-borde;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+// ========== LOCALES ==========
+.local-container {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    height: 260px;
+    object-fit: cover;
+    width: 100%;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid $color-borde;
+  }
+
+  .overlay-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: $color-acento;
+    font-size: 0.9rem;
+    padding: 6px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 0 0 8px 8px;
+  }
+
+  &:hover .overlay-text {
+    opacity: 1;
+  }
 }
 
-// RESET
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.local-link {
+  h5 {
+    margin-top: 0.5rem;
+    font-weight: 600;
+  }
+
+  p {
+    color: $color-secundario;
+    margin-bottom: 0.2rem;
+  }
 }
 
-body {
-    font-family: $font-family;
-    background-color: $color-fondo;
-    color: $color-texto;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+// ========== RESPONSIVE ==========
+@media (max-width: 992px) {
+  .video-wrapper iframe,
+  .image-wrapper img {
+    height: 300px;
+  }
 
-    main {
-        flex: 1;
-    }
+  .presentacion-img {
+    height: auto;
+  }
 }
 
-.header {
-    @include flex-center;
-    justify-content: space-between;
-    padding: 15px 30px;
-    background-color: $color-principal;
-    border-bottom: 3px solid $color-acento;
-
-    .logo img {
-        width: 100px;
-    }
-
-    .nav {
-        ul {
-            display: flex;
-            gap: 20px;
-            list-style: none;
-
-            li {
-                a {
-                    color: #f7e4c4;
-                    text-decoration: none;
-                    font-weight: bold;
-                    font-size: 1.5em;
-
-                    &:hover {
-                        color: $color-hover;
-                        text-shadow: 1px 1px 2px #000;
-                    }
-                }
-            }
-        }
-    }
-}
-
-.main-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-    padding: 20px;
-
-    h1, h2 {
-        text-align: center;
-    }
-
-    .hero {
-        text-align: center;
-
-        img {
-            max-width: 800px;
-            @include responsive-img();
-        }
-    }
-
-    .video-container {
-        @include flex-center;
-    }
-
-    .galeria {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px;
-
-        img {
-            width: 220px;
-            border: 3px solid $color-acento;
-            border-radius: 8px;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-        }
-    }
-}
-
-.footer {
-    background-color: $color-principal;
-    color: $color-texto;
+@media (max-width: 768px) {
+  .navbar-nav {
     text-align: center;
-    padding: 25px 10px;
-    border-top: 3px solid $color-acento;
-    margin-top: 40px;
+  }
 
-    .redes {
-        margin: 10px 0;
+  .footer-icon {
+    margin: 6px;
+  }
 
-        img {
-            width: 30px;
-            margin: 0 5px;
-            filter: brightness(0.8) sepia(0.8);
-            transition: transform 0.2s ease-in-out;
+  .video-wrapper,
+  .image-wrapper {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
 
-            &:hover {
-                transform: scale(1.2);
-            }
-        }
-    }
+  .video-wrapper iframe,
+  .image-wrapper img {
+    height: 240px;
+  }
+
+  .presentacion-img {
+    height: auto;
+  }
 }
 
-.form-contacto {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 30px auto;
-
-    label {
-        margin-top: 10px;
-        color: $color-secundario;
-        font-weight: bold;
-    }
-
-    input,
-    textarea {
-        padding: 10px;
-        margin-top: 5px;
-        border: none;
-        border-radius: 4px;
-        font-family: inherit;
-    }
-
-    button {
-        margin-top: 15px;
-        padding: 10px;
-        background-color: $color-acento;
-        color: $color-principal;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
+// ========== UTILIDADES ==========
+.bg-black {
+  background-color: $color-bg !important;
 }
 
-// SECCIONES: ofertas, locales, tablas, historia, cervezas
-
-.ofertas-grid {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    flex-wrap: wrap;
-    margin-top: 30px;
-
-    .oferta {
-        text-align: center;
-        max-width: 220px;
-        margin: 20px;
-
-        img {
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 4px solid $color-acento;
-            background-color: transparent;
-        }
-
-        p {
-            margin-top: 10px;
-            font-size: 1.1em;
-            color: $color-secundario;
-        }
-    }
-}
-
-.locales-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 30px;
-    padding: 30px;
-    text-align: center;
-
-    .local {
-        h3 {
-            font-size: 1.3em;
-            color: $color-texto;
-            margin-bottom: 0;
-        }
-
-        p {
-            font-size: 0.95em;
-            color: #fff8e6;
-            margin: 5px 0 10px;
-        }
-
-        a {
-            color: $color-secundario;
-            text-decoration: none;
-            font-weight: bold;
-
-            &:hover {
-                text-decoration: underline;
-                color: #ffffff;
-            }
-        }
-
-        img {
-            width: 100%;
-            max-width: 220px;
-            @include responsive-img();
-        }
-    }
-}
-
-.tabla-cervezas {
-    margin: 30px auto;
-    border-collapse: collapse;
-    width: 80%;
-    max-width: 800px;
-    background-color: $color-principal;
-    color: $color-texto;
-    text-align: center;
-    font-size: 1.1em;
-    border: 2px solid $color-acento;
-
-    th, td {
-        padding: 10px;
-        border: 1px solid $color-acento;
-    }
-
-    th {
-        font-weight: bold;
-        background-color: rgb(27, 27, 26);
-    }
-}
-
-.texto-centrado {
-    text-align: center;
-    max-width: 900px;
-    margin: 0 auto;
-
-    h2 {
-        font-size: 1.1rem;
-        margin-bottom: 40px;
-    }
-}
-
-.imagen-cervezas {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-
-    img {
-        width: 300px;
-        height: auto;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }
-}
-
-// MEDIA QUERIES
-@media screen and (max-width: $breakpoint-tablet) {
-    .oferta {
-        display: block;
-        margin: 20px auto;
-
-        img {
-            width: 60%;
-        }
-    }
+.text-white {
+  color: $color-text !important;
 }

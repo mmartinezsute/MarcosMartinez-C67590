@@ -1,73 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>LOCALES | VHOKINGO BEER</title>
-    <link rel="stylesheet" href="../css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="description" content="Descubrí nuestros locales Vhokingo Beer en Uruguay, Argentina, Japón y Europa.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locales - Vhokingo Beer</title>
+  <link rel="icon" href="../logo-vhokingo.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-        <!-- ENCABEZADO -->
-    <header class="header">
-        <div class="logo">
-            <img src="../logo-vhokingo.png" alt="Logo de Vhokingo Beer" width="120">
-        </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="historia.html">HISTORIA</a></li>
-                <li><a href="cervezas.html">CERVEZAS</a></li>
-                <li><a href="ofertas.html">OFERTAS</a></li>
-                <li><a href="locales.html">LOCALES</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>
 
-        <!-- CONTENIDO PRINCIPAL -->
-    <main class="main-content">
-        <section>
-            <h1>NUESTROS LOCALES</h1>
-            <div class="locales-grid">
-                <div class="local">
-                    <h3>Montevideo</h3>
-                    <p>Centro: Calle Vikinga 123</p>
-                    <p><a href="https://www.google.com/maps/place/Ciudad+Vieja,+Montevideo,+Uruguay" target="_blank">Ciudad Vieja, Montevideo, Uruguay</a></p>
-                    <img src="../images/local1.png" alt="Local en Montevideo">
-                </div>
-                <div class="local">
-                    <h3>Buenos Aires</h3>
-                    <p>Palermo: Av. Thor 987</p>
-                    <p><a href="https://www.google.com/maps/place/Palermo,+CABA,+Argentina" target="_blank">CABA, Buenos Aires, Argentina</a></p>
-                    <img src="../images/local2.png" alt="Local en Buenos Aires">
-                </div>
-                <div class="local">
-                    <h3>Tokyo</h3>
-                    <p>Shibuya: Drakkar Street 45</p>
-                    <p><a href="https://www.google.com/maps/place/Shibuya+City,+Tokyo,+Japan" target="_blank">Shibuya-ku, Tokyo 150-0002, Japón</a></p>
-                    <img src="../images/local3.png" alt="Local en Tokyo">
-                </div>
-                <div class="local">
-                    <h3>Latveria</h3>
-                    <p>Doom Plaza: Ruta del Trueno 666</p>
-                    <p><a href="https://www.google.com/maps/place/Stonehenge,+Salisbury,+Reino Unido" target="_blank">Sector Sombra, Montañas de Stonehenge, Latveria</a></p>
-                    <img src="../images/local4.png" alt="Local en Latveria">
-                </div>
-            </div>
-        </section>
-    </main>
+  <!-- HEADER -->
+  <header class="navbar navbar-expand-lg navbar-dark degradado border-bottom">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../logo-vhokingo.png" alt="Logo Vhokingo Beer">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+          <li class="nav-item"><a class="nav-link" href="cervezas.html">Cervezas</a></li>
+          <li class="nav-item"><a class="nav-link" href="ofertas.html">Ofertas</a></li>
+          <li class="nav-item"><a class="nav-link" href="locales.html">Locales</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <!-- PIE DE PÁGINA -->
-    <footer class="footer">
-        <p>SIEMPRE BEBA CON PRECAUCIÓN</p>
-        <div class="redes">
-            <a href="#"><img src="../icons/telefono.png" alt="Teléfono" /></a>
-            <a href="#"><img src="../icons/mail.png" alt="Mail" /></a>
-            <a href="#"><img src="../icons/facebook.png" alt="Facebook" /></a>
-            <a href="#"><img src="../icons/instagram.png" alt="Instagram" /></a>
-            <a href="#"><img src="../icons/youtube.png" alt="YouTube" /></a>
+  <hr class="linea-divisoria">
+
+  <!-- MAIN -->
+  <main class="bg-black text-white py-5">
+    <div class="container text-center">
+      <h1>Nuestros Locales</h1>
+    </div>
+
+    <div class="container mt-4">
+      <div class="row">
+
+        <div class="col-md-3 mb-4 text-center">
+          <img src="../images/local1.png" alt="Montevideo" class="img-fluid rounded shadow border border-secondary mb-3">
+          <h5>Montevideo</h5>
+          <p>Calle Vikinga 123<br>Ciudad Vieja, Uruguay</p>
         </div>
-        <p>&copy; 2025 - Todos los derechos reservados</p>
-    </footer>
+
+        <div class="col-md-3 mb-4 text-center">
+          <img src="../images/local2.png" alt="Buenos Aires" class="img-fluid rounded shadow border border-secondary mb-3">
+          <h5>Buenos Aires</h5>
+          <p>Av. Thor 987<br>Palermo, Argentina</p>
+        </div>
+
+        <div class="col-md-3 mb-4 text-center">
+          <img src="../images/local3.png" alt="Tokyo" class="img-fluid rounded shadow border border-secondary mb-3">
+          <h5>Tokyo</h5>
+          <p>Drakkar Street 45<br>Shibuya, Japón</p>
+        </div>
+
+        <div class="col-md-3 mb-4 text-center">
+          <img src="../images/local4.png" alt="Latveria" class="img-fluid rounded shadow border border-secondary mb-3">
+          <h5>Latveria</h5>
+          <p>Ruta del Trueno 666<br>Stonehenge, Europa</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-white text-center py-4 degradado border-top">
+    <div class="container">
+      <p class="mb-2">Seguinos en redes</p>
+      <div class="d-flex justify-content-center align-items-center flex-wrap mb-2">
+        <a href="#"><img src="../icons/facebook.png" alt="Facebook" class="footer-icon"></a>
+        <a href="#"><img src="../icons/instagram.png" alt="Instagram" class="footer-icon"></a>
+        <a href="#"><img src="../icons/youtube.png" alt="YouTube" class="footer-icon"></a>
+        <a href="#"><img src="../icons/mail.png" alt="Email" class="footer-icon"></a>
+        <a href="#"><img src="../icons/telefono.png" alt="Teléfono" class="footer-icon"></a>
+      </div>
+      <p class="small">&copy; 2025 Vhokingo Beer – Todos los derechos reservados</p>
+    </div>
+  </footer>
+
 </body>
 </html>

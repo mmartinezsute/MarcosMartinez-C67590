@@ -1,61 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>OFERTAS | VHOKINGO BEER</title>
-    <link rel="stylesheet" href="../css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="description" content="Ofertas especiales en cervezas artesanales Vhokingo Beer.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ofertas - Vhokingo Beer</title>
+  <link rel="icon" href="../logo-vhokingo.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-        <!-- ENCABEZADO -->
-    <header class="header">
-        <div class="logo">
-            <img src="../logo-vhokingo.png" alt="Logo de Vhokingo Beer" width="120">
-        </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="historia.html">HISTORIA</a></li>
-                <li><a href="cervezas.html">CERVEZAS</a></li>
-                <li><a href="ofertas.html">OFERTAS</a></li>
-                <li><a href="locales.html">LOCALES</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>
 
-        <!-- CONTENIDO PRINCIPAL -->
-    <main class="main-content">
-        <section>
-            <h1>OFERTAS ESPECIALES</h1>
-            <div class="ofertas-grid">
-            <div class="oferta">
-                <img src="../images/oferta1.png" alt="3x2 Odin Lager">
-                <p>3x2 en Odin Lager los fines de semana</p>
-            </div>
-            <div class="oferta">
-                <img src="../images/oferta2.png" alt="Happy Hour">
-                <p>Promo Happy Hour: 2 pintas al precio de 1 de 18 a 20hs</p>
-            </div>
-            <div class="oferta">
-                <img src="../images/oferta3.png" alt="Valhalla IPA">
-                <p>Pack Valhalla IPA (6 unidades) con 15% de descuento</p>
-            </div>
-            </div>
-        </section>
-    </main>
+  <!-- HEADER -->
+  <header class="navbar navbar-expand-lg navbar-dark degradado border-bottom">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../logo-vhokingo.png" alt="Logo Vhokingo Beer">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+          <li class="nav-item"><a class="nav-link" href="cervezas.html">Cervezas</a></li>
+          <li class="nav-item"><a class="nav-link" href="ofertas.html">Ofertas</a></li>
+          <li class="nav-item"><a class="nav-link" href="locales.html">Locales</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <!-- PIE DE PÁGINA -->
-    <footer class="footer">
-        <p>SIEMPRE BEBA CON PRECAUCIÓN</p>
-        <div class="redes">
-            <a href="#"><img src="../icons/telefono.png" alt="Teléfono" /></a>
-            <a href="#"><img src="../icons/mail.png" alt="Mail" /></a>
-            <a href="#"><img src="../icons/facebook.png" alt="Facebook" /></a>
-            <a href="#"><img src="../icons/instagram.png" alt="Instagram" /></a>
-            <a href="#"><img src="../icons/youtube.png" alt="YouTube" /></a>
+  <hr class="linea-divisoria">
+
+  <!-- MAIN -->
+  <main class="bg-black text-white py-5">
+    <div class="container text-center mb-5">
+      <h1>Ofertas Especiales</h1>
+      <p class="lead">Solo por tiempo limitado en nuestros locales</p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4 mb-4">
+          <img src="../images/oferta1.png" alt="Promo 1" class="img-fluid rounded shadow border border-secondary oferta-img">
+          <h5 class="mt-3">Promo Vikingo</h5>
+          <p>2x1 en Golden Lager todos los viernes.</p>
         </div>
-        <p>&copy; 2025 - Todos los derechos reservados</p>
-    </footer>
+
+        <div class="col-md-4 mb-4">
+          <img src="../images/oferta2.png" alt="Promo 2" class="img-fluid rounded shadow border border-secondary oferta-img">
+          <h5 class="mt-3">Happy Hour</h5>
+          <p>De 18 a 20 hs. todas las cervezas a mitad de precio.</p>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <img src="../images/oferta3.png" alt="Promo 3" class="img-fluid rounded shadow border border-secondary oferta-img">
+          <h5 class="mt-3">Growler Gratis</h5>
+          <p>Con la compra de 3 litros te regalamos uno para llevar.</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-white text-center py-4 degradado border-top">
+    <div class="container">
+      <p class="mb-2">Seguinos en redes</p>
+      <div class="d-flex justify-content-center align-items-center flex-wrap mb-2">
+        <a href="#"><img src="../icons/facebook.png" alt="Facebook" class="footer-icon"></a>
+        <a href="#"><img src="../icons/instagram.png" alt="Instagram" class="footer-icon"></a>
+        <a href="#"><img src="../icons/youtube.png" alt="YouTube" class="footer-icon"></a>
+        <a href="#"><img src="../icons/mail.png" alt="Email" class="footer-icon"></a>
+        <a href="#"><img src="../icons/telefono.png" alt="Teléfono" class="footer-icon"></a>
+      </div>
+      <p class="small">&copy; 2025 Vhokingo Beer – Todos los derechos reservados</p>
+    </div>
+  </footer>
+
 </body>
 </html>

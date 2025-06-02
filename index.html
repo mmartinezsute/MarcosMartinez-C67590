@@ -1,61 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>VHOKINGO BEER | Inicio</title>
-    <link rel="stylesheet" href="css/style.css" />
+  <meta charset="utf-8">
+  <title>Vhokingo Beer – El elixir del guerrero moderno</title>
+  <meta name="description" content="Cervezas artesanales inspiradas en la cultura vikinga. Unite al clan.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="logo-vhokingo.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="logo-vhokingo.png" alt="Logo de Vhokingo Beer" />
-        </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="pages/historia.html">HISTORIA</a></li>
-                <li><a href="pages/cervezas.html">CERVEZAS</a></li>
-                <li><a href="pages/ofertas.html">OFERTAS</a></li>
-                <li><a href="pages/locales.html">LOCALES</a></li>
-                <li><a href="pages/contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main class="main-content">
-        <section class="hero">
-            <article>
-                <h1>BIENVENIDOS A VHOKINGO BEER</h1>
-                <h2>Somos una cervecería artesanal que honra la tradición vikinga con cada sorbo...</h2>
-            </article>
-        </section>
+  <!-- HEADER -->
+  <header class="navbar navbar-expand-lg navbar-dark degradado border-bottom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="logo-vhokingo.png" alt="Logo Vhokingo Beer" style="height: 70px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="pages/historia.html">Historia</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/cervezas.html">Cervezas</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/ofertas.html">Ofertas</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/locales.html">Locales</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <div class="video-container">
-            <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/iYt_yyYq1-Q"
-                title="Video de Vhokingo Beer" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
+  <hr class="linea-divisoria">
 
-        <div class="galeria">
-            <img src="images/galeria1.png" alt="Cerveza Vhokingo servida en jarra artesanal" />
-            <img src="images/galeria2.png" alt="Cliente disfrutando Vhokingo Beer en local nocturno" />
-        </div>
-    </main>
+  <!-- MAIN -->
+<main class="bg-black text-white">
 
-    <footer class="footer">
-        <p>SIEMPRE BEBA CON PRECAUCIÓN</p>
-        <div class="redes">
-            <a href="#"><img src="icons/telefono.png" alt="Teléfono" /></a>
-            <a href="#"><img src="icons/mail.png" alt="Mail" /></a>
-            <a href="#"><img src="icons/facebook.png" alt="Facebook" /></a>
-            <a href="#"><img src="icons/instagram.png" alt="Instagram" /></a>
-            <a href="#"><img src="icons/youtube.png" alt="YouTube" /></a>
-        </div>
-        <p>&copy; 2025 - Todos los derechos reservados</p>
-    </footer>
+  <!-- TÍTULOS Y TEXTO INTRODUCTORIO -->
+  <section class="text-center py-5">
+    <div class="container">
+      <h1 class="display-4 mb-2">Vhokingo Beer</h1>
+      <h2 class="mb-4">El elixir del guerrero moderno</h2>
+      <p class="lead">
+        La cerveza tiene raíces profundas en la cultura vikinga. Para los antiguos nórdicos, el hidromiel y la cerveza eran vistos como el “elixir de los dioses”, esenciales en banquetes y rituales. Ingredientes como la cebada y hierbas silvestres le daban sabor y propiedades únicas a sus brebajes.
+      </p>
+    </div>
+  </section>
+
+  <!-- VIDEO + IMAGEN GALERÍA -->
+  <section class="py-4">
+    <div class="container d-flex flex-column flex-lg-row justify-content-center align-items-center gap-4">
+      <div class="video-wrapper mb-3 mb-lg-0">
+        <iframe src="https://www.youtube.com/embed/iYt_yyYq1-Q" allowfullscreen title="Video Vhokingo"></iframe>
+      </div>
+      <div class="image-wrapper">
+        <img src="images/galeria2.png" alt="Imagen presentación Vhokingo">
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGEN PRESENTACIÓN -->
+  <section class="py-4">
+    <div class="container">
+      <img src="images/presentacion-vhokingo.png" alt="Presentación general Vhokingo" class="img-fluid presentacion-img mx-auto d-block">
+    </div>
+  </section>
+
+  <!-- TEXTO FINAL -->
+  <section class="text-center pb-5">
+    <div class="container">
+      <p class="lead">
+        En las largas noches del invierno escandinavo, encender hogueras y compartir una jarra de cerveza fortalecía la comunidad. Nuestras recetas modernas se inspiran en estas tradiciones ancestrales, adaptando sabores tradicionales a los gustos actuales.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+
+  <!-- FOOTER -->
+  <footer class="text-white text-center py-4 degradado border-top">
+    <div class="container">
+      <p class="mb-2">Seguinos en redes</p>
+      <div class="d-flex justify-content-center align-items-center flex-wrap mb-2">
+        <a href="#"><img src="icons/facebook.png" alt="Facebook" class="footer-icon"></a>
+        <a href="#"><img src="icons/instagram.png" alt="Instagram" class="footer-icon"></a>
+        <a href="#"><img src="icons/youtube.png" alt="YouTube" class="footer-icon"></a>
+        <a href="#"><img src="icons/mail.png" alt="Email" class="footer-icon"></a>
+        <a href="#"><img src="icons/telefono.png" alt="Teléfono" class="footer-icon"></a>
+      </div>
+      <p class="small">&copy; 2025 Vhokingo Beer – Todos los derechos reservados</p>
+    </div>
+  </footer>
+
 </body>
 </html>

@@ -1,72 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>CERVEZAS | VHOKINGO BEER</title>
-    <link rel="stylesheet" href="../css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="description" content="Catálogo de cervezas artesanales Vhokingo Beer: sabores legendarios.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestras Cervezas - Vhokingo Beer</title>
+  <link rel="icon" href="../logo-vhokingo.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-        <!-- ENCABEZADO -->
-    <header class="header">
-        <div class="logo">
-            <img src="../logo-vhokingo.png" alt="Logo de Vhokingo Beer" />
+
+  <!-- HEADER -->
+  <header class="navbar navbar-expand-lg navbar-dark degradado border-bottom">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../logo-vhokingo.png" alt="Logo Vhokingo Beer">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+          <li class="nav-item"><a class="nav-link active" href="cervezas.html">Cervezas</a></li>
+          <li class="nav-item"><a class="nav-link" href="ofertas.html">Ofertas</a></li>
+          <li class="nav-item"><a class="nav-link" href="locales.html">Locales</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <hr class="linea-divisoria">
+
+  <!-- MAIN -->
+  <main class="bg-black text-white py-5">
+    <div class="container text-center mb-5">
+      <h1 class="display-4">Nuestras Cervezas</h1>
+      <p class="lead">Una colección artesanal digna de los dioses nórdicos</p>
+    </div>
+
+    <!-- CARDS -->
+    <div class="container">
+      <div class="row justify-content-center g-4">
+        <!-- Sköll Rubia -->
+        <div class="col-md-4 mb-4">
+          <div class="card bg-dark text-white h-100 border-secondary">
+            <img src="../images/cerveza-rubia.png" class="card-img-top" alt="Cerveza Rubia">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Sköll Rubia</h5>
+              <p class="card-text">Refrescante, ligera y con un final suave. Ideal para brindar tras la batalla.</p>
+              <a href="#" class="btn btn-outline-light btn-sm">Ver más</a>
+            </div>
+          </div>
         </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="historia.html">HISTORIA</a></li>
-                <li><a href="cervezas.html">CERVEZAS</a></li>
-                <li><a href="ofertas.html">OFERTAS</a></li>
-                <li><a href="locales.html">LOCALES</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>
 
-        <!-- CONTENIDO PRINCIPAL -->
-    <main class="main-content">
-        <section>
-            <h1>NUESTRAS CERVEZAS</h1>
-            <table class="tabla-cervezas">
-                <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Tipo</th>
-                    <th>Graduación</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Valhalla IPA</td>
-                    <td>IPA</td>
-                    <td>6.2%</td>
-                </tr>
-                <tr>
-                    <td>Odin Lager</td>
-                    <td>Lager</td>
-                    <td>5.0%</td>
-                </tr>
-                </tbody>
-            </table>
-            
-            <div class="imagen-cervezas">
-                <img src="../images/cervezas-final.png" alt="Botella de Valhalla y Odin Lager">
+        <!-- Odin Stout -->
+        <div class="col-md-4 mb-4">
+          <div class="card bg-dark text-white h-100 border-secondary">
+            <img src="../images/cerveza-negra.png" class="card-img-top" alt="Cerveza Negra">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Odin Stout</h5>
+              <p class="card-text">Oscura, con notas a cacao y café. El elixir para las noches de conquista.</p>
+              <a href="#" class="btn btn-outline-light btn-sm">Ver más</a>
             </div>
-        </section>
-    </main>
+          </div>
+        </div>
 
-        <!-- PIE DE PÁGINA -->
-    <footer class="footer">
-            <p>SIEMPRE BEBA CON PRECAUCIÓN</p>
-            <div class="redes">
-                <a href="#"><img src="../icons/telefono.png" alt="Teléfono"></a>
-                <a href="#"><img src="../icons/mail.png" alt="Mail"></a>
-                <a href="#"><img src="../icons/facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="../icons/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="../icons/youtube.png" alt="YouTube"></a>
+        <!-- Freyja Roja -->
+        <div class="col-md-4 mb-4">
+          <div class="card bg-dark text-white h-100 border-secondary">
+            <img src="../images/cerveza-roja.png" class="card-img-top" alt="Cerveza Roja">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Freyja Roja</h5>
+              <p class="card-text">Equilibrada, con cuerpo medio y un dulzor maltoso encantador.</p>
+              <a href="#" class="btn btn-outline-light btn-sm">Ver más</a>
             </div>
-            <p>&copy; 2025 - Todos los derechos reservados</p>
-    </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TABLA -->
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Variedades y Estilos</h2>
+      <div class="table-responsive">
+        <table class="table table-dark table-bordered text-center">
+          <thead class="thead-light text-dark">
+            <tr>
+              <th>Nombre</th>
+              <th>Estilo</th>
+              <th>Alcohol</th>
+              <th>Amargor (IBU)</th>
+              <th>Presentación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Sköll Rubia</strong></td>
+              <td>Pilsen</td>
+              <td>4.5%</td>
+              <td>20</td>
+              <td>Botella 330ml / Growler</td>
+            </tr>
+            <tr>
+              <td><strong>Odin Stout</strong></td>
+              <td>Stout</td>
+              <td>6.2%</td>
+              <td>45</td>
+              <td>Lata 473ml / Barril</td>
+            </tr>
+            <tr>
+              <td><strong>Freyja Roja</strong></td>
+              <td>Irish Red</td>
+              <td>5.1%</td>
+              <td>28</td>
+              <td>Botella 500ml / Pack 6</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-white text-center py-4 degradado border-top mt-5">
+    <div class="container">
+      <p class="mb-2">Seguinos en redes</p>
+      <div class="d-flex justify-content-center align-items-center flex-wrap mb-2">
+        <a href="#"><img src="../icons/facebook.png" alt="Facebook" class="footer-icon"></a>
+        <a href="#"><img src="../icons/instagram.png" alt="Instagram" class="footer-icon"></a>
+        <a href="#"><img src="../icons/youtube.png" alt="YouTube" class="footer-icon"></a>
+        <a href="#"><img src="../icons/mail.png" alt="Email" class="footer-icon"></a>
+        <a href="#"><img src="../icons/telefono.png" alt="Teléfono" class="footer-icon"></a>
+      </div>
+      <p class="small">&copy; 2025 Vhokingo Beer – Todos los derechos reservados</p>
+    </div>
+  </footer>
+
 </body>
 </html>
